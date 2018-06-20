@@ -74,7 +74,7 @@ Configure the root of your repository with the following files and directories. 
  * `DELETE`: test 200, it should respond with a 204 status to indicate successful deletion
  * `DELETE`: test 404, it should respond with a 404 status to indicate that resource was not found
  
- ## BONUS points (up to 3 points)
+ ## Bonus Points (up to 3 points)
  * If a querystring id is not passed to the `GET` route, the default behavior should retrieve an array of ID's for each resource stored in the storage module. 
  * * `PUT` request
   * pass `?id=<uuid>` in the query string to **UPDATE** a specific resource
