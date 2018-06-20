@@ -76,11 +76,11 @@ Configure the root of your repository with the following files and directories. 
  
  ## Bonus Points (up to 3 points)
  * If a querystring id is not passed to the `GET` route, the default behavior should retrieve an array of ID's for each resource stored in the storage module. 
- * * `PUT` request
-  * pass `?id=<uuid>` in the query string to **UPDATE** a specific resource
-  * SUCCESS: 200 status code with the response body being the updated resource
-  * FAILURE: 404 for resource not found
-  * Test your `PUT` request for 200 and 404 statuses
+ * `PUT` request
+   * pass `?id=<uuid>` in the query string to **UPDATE** a specific resource
+   * SUCCESS: 200 status code with the response body being the updated resource
+   * FAILURE: 404 for resource not found
+   * Test your `PUT` request for 200 and 404 statuses
  * Create a new `GET` route or modify your original `GET` route so that it can accept other query paramters besides an ID, such as `/api/v1/notes?title=hello&content=world`. The behavior of this route should search through your storage module and return an array of all resources matching that criteria. 
  
  ## Documentation
