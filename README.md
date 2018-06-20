@@ -50,13 +50,13 @@ Configure the root of your repository with the following files and directories. 
 * create a data model storage interface that can store data through different storage mechanisms.
 
 ## Server Endpoints
-### `/api/v1/<your-resource>
+### `/api/v1/<your-resource>`
 * `POST` request
   * pass data as stringifed JSON in the body of a **POST** request to create a new resource
   * SUCCESS: 200 status code with the response body being the retrieved resource with a matching ID
   * FAILURE: 400 for a bad request, i.e. not sending in a required property or not sending any text
 * `GET` request
-  * pass `?id=<uuid>` as a query string parameter to retrieve a specific resource (as JSON)
+  * pass `?id=<uuid>` as a query string parameter to **GET** a specific resource (as JSON)
   * SUCCESS: 200 status code with the response body being the retrieved resource with a matching ID
   * FAILURE: 404 for resource not found
 * `DELETE` request
