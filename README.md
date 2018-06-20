@@ -1,4 +1,5 @@
-![cf](https://i.imgur.com/7v5ASc8.png) Lab 08: Vanilla REST API w/ Routing and In Memory Persistence
+![cf](https://i.imgur.com/7v5ASc8.png)    
+# Lab 08: Vanilla REST API w/ Routing and In Memory Persistence
 
 ## Submission Instructions
 * Work in a fork of this repository
