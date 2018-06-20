@@ -84,6 +84,6 @@ Configure the root of your repository with the following files and directories. 
  * Create a new `GET` route or modify your original `GET` route so that it can accept other query paramters besides an ID, such as `/api/v1/notes?title=hello&content=world`. The behavior of this route should search through your storage module and return an array of all resources matching that criteria. 
  
  ## Documentation
- List all of your registered routes and describe their behavior. Describe what your resouce is. Imagine you are providing this API to other developers who need to research your API in order to use it. Describe how a developer should be able to make requests to your API. Refer to the [PokeAPI docs](https://pokeapi.co/docsv2/#resource-lists) for a good example to follow. 
+ Add your Travis badge to the top of your README. List all of your registered routes and describe their behavior. Describe what your resouce is. Imagine you are providing this API to other developers who need to research your API in order to use it. Describe how a developer should be able to make requests to your API. Refer to the [PokeAPI docs](https://pokeapi.co/docsv2/#resource-lists) for a good example to follow. 
 
 
