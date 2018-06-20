@@ -49,7 +49,7 @@ Configure the root of your repository with the following files and directories. 
 * create a data model storage interface that can store data through different storage mechanisms.
 
 ## Server Endpoints
-### `/api/vi/notes
+### `/api/v1/<your-resource>
 * `POST` request
   * pass data as stringifed JSON in the body of a **POST** request to create a new resource
   * SUCCESS: 200 status code with the response body being the retrieved resource with a matching ID
@@ -57,10 +57,6 @@ Configure the root of your repository with the following files and directories. 
 * `GET` request
   * pass `?id=<uuid>` as a query string parameter to retrieve a specific resource (as JSON)
   * SUCCESS: 200 status code with the response body being the retrieved resource with a matching ID
-  * FAILURE: 404 for resource not found
-* `PUT` request
-  * pass `?id=<uuid>` in the query string to **UPDATE** a specific resource
-  * SUCCESS: 200 status code with the response body being the updated resource
   * FAILURE: 404 for resource not found
 * `DELETE` request
   * pass `?id=<uuid>` in the query string to **DELETE** a specific resource
@@ -70,10 +66,23 @@ Configure the root of your repository with the following files and directories. 
 ## Tests
 * write a test to ensure that your api returns a status code of 404 for routes that have not been registered
 * write tests to ensure the `/api/simple-resource-name` endpoint responds as described for each condition below:
- * `GET`: test 404, it should respond with 'not found' for valid requests made with an id that was not found
- * `GET`: test 400, it should respond with 'bad request' if no id was provided in the request
+ * `GET`: test 404, it should respond with 'Not Found' for valid requests made with an id that was not found
  * `GET`: test 200, it should contain a response body for a request made with a valid id
- * `POST`: test 400, it should respond with 'bad request' if no request body was provided or the body was invalid
+ * `POST`: test 400, it should respond with 'Bad Request' if no request body was provided or the body was invalid
  * `POST`: test 200, it should respond with the body content for a post request with a valid body
+ * `DELETE`: test 200, it should respond with a 204 status to indicate successful deletion
+ * `DELETE`: test 404, it should respond with a 404 status to indicate that resource was not found
+ 
+ ## BONUS points (up to 3 points)
+ * If a querystring id is not passed to the `GET` route, the default behavior should retrieve an array of ID's for each resource stored in the storage module. 
+ * * `PUT` request
+  * pass `?id=<uuid>` in the query string to **UPDATE** a specific resource
+  * SUCCESS: 200 status code with the response body being the updated resource
+  * FAILURE: 404 for resource not found
+  * Test your `PUT` request for 200 and 404 statuses
+ * Create a new `GET` route or modify your original `GET` route so that it can accept other query paramters besides an ID, such as `/api/v1/notes?title=hello&content=world`. The behavior of this route should search through your storage module and return an array of all resources matching that criteria. 
+ 
+ ## Documentation
+ List all of your registered routes and describe their behavior. Describe what your resouce is. Imagine you are providing this API to other developers who need to research your API in order to use it. Describe how a developer should be able to make requests to your API. Refer to the [PokeAPI docs](https://pokeapi.co/docsv2/#resource-lists) for a good example to follow. 
 
 
