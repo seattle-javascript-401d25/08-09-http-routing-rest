@@ -19,7 +19,7 @@
 * Continue your work from Lab 8
 * Add a `storage` directory in your `lib` directory that contains three modules:
     * Move your `storage.js` module from Lab 8 into this directory and rename it `memory.js` (or whatever naming convention you want)
-    * Create a new module called `file-system.js` (or whatever you want) where you will write new storage methods that will save and persist your resources to your local file system instead of in memory. Those storage methods should be the same as the MVP requirements for Lab 8: `GET, PUT, and POST (PUT is extra credit)`
+    * Create a new module called `file-system.js` (or whatever you want) where you will write new storage methods that will save and persist your resources to your local file system instead of in memory. Those storage methods should be the same as the MVP requirements for Lab 8: `GET, POST, and DELETE (PUT is extra credit)`
     * Export those modules into an entry point module of your `storage` directory that will rely on an `env` variable to determine which database system you use for your API
 
 ## Stretch Goals
