@@ -14,6 +14,7 @@
   * how long you spent
   * link to your pull request
   * Heroku Server URL (should be the same as what you submitted for Lab 8)
+  * Copy/paste your `.env` variables in the comment box so your TA can easily recreate a `.env` file on their end
   
 ## Feature Tasks
 * Continue your work from Lab 8
@@ -26,6 +27,9 @@
 * Automatically delete your test files that get created when you run tests if you are using file system storage
 * In your `file-system` module, write code that dynamically creates a new resource directory if one is not found, i.e. if there is no **data/Notes** folder, use the `fs` module to create those directories.
 * Research and utilize other modules and third party libraries that can automatically promisify your `fs` methods for you without having to manually wrap your code in Promises
+
+## Documentation
+Same as Lab 8
 
 
 
