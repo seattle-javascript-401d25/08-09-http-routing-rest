@@ -7,13 +7,13 @@
 * **Please make sure to keep work as separate as possible from `lab-08` so TA's can grade accordingly** 
 * Create a PR to your master from your working branch.
 * Ensure that your repository/branch is connected to travis-ci.com
-* Ensure that your repository/branch is connected to a dyno at heroku.com
+* Ensure that your repository/branch is connected to Heroku
 * Heroku and Travis should pick you up and deploy
 * Submit on canvas:
   * a question and observation
   * how long you spent
   * link to your pull request
-  * Heroku Server URL (can be the same as what you submitted for Lab 8)
+  * Heroku Server URL (should be the same as what you submitted for Lab 8)
   
 ## Feature Tasks
 * Continue your work from Lab 8
